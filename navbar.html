@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>My Website</title>
+    <style>
+        /* Add the CSS styling here */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        nav li {
+            float: left;
+        }
+
+        nav li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav li a:hover {
+            background-color: #111;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to My Website</h1>
+    <p>This is a demonstration of a simple navigable page layout using the nav element.</p>
+
+    <!--basic table syntex-->
+
+    <table>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$80</td>
+  </tr>
+</table>
+
+
+<!--using scope with tabe header-->
+
+<table>
+  <tr>
+    <th scope="col">Month</th>
+    <th scope="col">Savings</th>
+  </tr>
+  <tr>
+    <th scope="row">January</th>
+    <td>$100</td>
+  </tr>
+</table>
+
+<!--example merging cell-->
+
+<table>
+  <tr>
+    <th>Person</th>
+    <th colspan="2">Details</th>
+  </tr>
+  <tr>
+    <td>John Doe</td>
+    <td>Age: 30</td>
+    <td>Occupation: Developer</td>
+  </tr>
+</table>
+
+<!--using caption for tables-->
+
+<table>
+  <caption>Monthly Savings</caption>
+  <tr>
+    <th scope="col">Month</th>
+    <th scope="col">Savings</th>
+  </tr>
+  <tr>
+    <th scope="row">January</th>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <th scope="row">February</th>
+    <td>$80</td>
+  </tr>
+</table>
+
+
+<!--Create a table that lists three of your favorite books, including
+ columns for the book title, author, year published, and genre. 
+ Use header cells for column headings, include a caption for your table, 
+ and merge cells where appropriate to demonstrate your understanding of 
+ table syntax and accessibility practices.-->
+
+ <table>
+    <caption>My favorite books</caption>
+    <tr>
+        <th>TITLE</th>
+        <th>AUTHOR</th>
+        <th>YEARS OF PUBLICATION</th>
+    </tr>
+
+<tr>
+    <td>The rich dad</td>
+     <td>Robert kiyosaki</td>
+      <td>2000</td>
+</tr>
+
+<tr>
+    <td>Ralia the sugar girl</td>
+     <td>Kola onadipe</td>
+      <td>1964</td>
+</tr>
+
+<tr>
+    <td>Agbalowomeri</td>
+     <td>Joseph folahan odunjo</td>
+      <td>1958</td>
+</tr>
+
+ </table>
+ <!--creating table in html-->
+
+ <div style="background-color: aqua; padding-top: 30px; padding-bottom: 20px;">
+    <form action="/submit-form" method="post">
+    <label for="username">Username (4-8 characters):</label>
+    <input type="text" id="username" name="username" required minlength="4" maxlength="8" placeholder="Username">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="example@domain.com">
+
+    <button type="submit">Submit</button>
+</form>
+ </div>
+
+ <!--Create a registration form for an online service that includes the following elements:
+
+Username: Text input, required, with a suitable length limit.
+Password: Password input, required, with minimum length validation.
+Email: Email input, required, with built-in email validation.
+Age: Number input, optional, with a minimum and maximum value.
+Terms of Service: Checkbox, required (user must check to proceed).
+Submit button.
+Ensure each input has an associated label and utilize placeholders to guide user input. Test your form to see how the browser handles validation for different fields.-->
+
+ <div style="background-color: aqua; padding-top: 30px; padding-bottom: 20px;">
+
+    <form action="/submit-form" method="post">
+        <label for="username">Username (20 characters):</label>
+        <input type="text" id="username" Name="Username" required maxlength="20" placeholder=" Enter Username">
+
+        <label for="Password">Password (12 characters):</label>
+        <input type="text" id="Password" Name="Password" required maxlength="10" placeholder="Enter Password">
+
+        <label for="Email">Email:</label>
+        <input type="text" id="Email" Name="Email" placeholder="Enter Your Email">
+
+        <label for="Age">Age</label>
+        <input type="date" id="Age" name="Age" required placeholder="Enter Your Age">
+
+        <label for="terms of service"> Terms of service</label>
+        <input type="checkbox" id="terms of service" name="terms of service" required>
+
+        <button type="submit">submit</button>
+
+    </form>
+  
+    <figure>
+      <img src="astronut.jpeg" alt="astronut image">
+      <figcaption>to learn about astronut fill the form</figcaption>
+    </figure>
+
+ </div>
+</body>
+</html>
